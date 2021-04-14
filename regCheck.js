@@ -1,5 +1,3 @@
-/*console.log("runing in regCheck.js")*/
-
 function regCheck(plateLoc, plateNo) {
     return (plateLoc.endsWith(plateNo));
   }
