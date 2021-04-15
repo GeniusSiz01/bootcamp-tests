@@ -1,12 +1,12 @@
 describe('Test my isWeekday function' , function() {
 
-    it('It should return "false" if a day starts wtih "S" i.e "weekdend Saturday&Sunday" ' , function(){
+    it('that takes a string parameter - to find out if the parameter passed in is a day of the week (ie. Mon-Fri)." it should return true for Mon-fri and return false for Saturday and Sunday ' , function(){
         
         assert.deepEqual(isWeekday('Saturday'), false);
 
     });
 
-    it('It should return "true" if a day does not starts wtih "S" i.e "weekday Mon-Fri" ' , function(){
+    it('that takes a string parameter - to find out if the parameter passed in is a day of the week (ie. Mon-Fri)." it should return true for Mon-fri and return false for Saturday and Sunday ' , function(){
         
         assert.deepEqual(isWeekday('Monday'), true);
 
