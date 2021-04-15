@@ -1,20 +1,20 @@
 
-describe('Test my regCheck function' , function(){
-    it('It should return "true" if registration is from "GP" ' , function(){
-        
+describe('Test my regCheck function', function () {
+    it('that can check if a registration number is for "GP, L, EC, MP" registration plates. It returns true registration number is from "GP, L, EC, MP" and false if otherwiae ', function () {
+
         assert.deepEqual(regCheck('DV 23 NB GP', 'GP'), true);
 
     });
 
-    it('It should return "false" if the registration number is not from "MP" ' , function(){
+    it('that can check if a registration number is for "GP, L, EC, MP" registration plates. It returns true registration number is from "GP, L, EC, MP" and false if otherwiae ' , function () {
         assert.deepEqual(regCheck('DV 23 LP GP', 'MP'), false);
-        
+
 
     });
-    
-    it('It should return "true" if the registration number is from "CY" ' , function(){
+
+    it('that can check if a registration number is for "GP, L, EC, MP" registration plates. It returns true registration number is from "GP, L, EC, MP" and false if otherwiae ' , function () {
         assert.deepEqual(regCheck('CY 189-012', 'CY'), false);
-        
+
 
     });
 
